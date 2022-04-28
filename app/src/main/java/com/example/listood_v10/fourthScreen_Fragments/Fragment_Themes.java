@@ -1,4 +1,4 @@
-package com.example.listood_v10;
+package com.example.listood_v10.fourthScreen_Fragments;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.listood_v10.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Fragment_Settings1#newInstance} factory method to
+ * Use the {@link Fragment_Themes#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Fragment_Settings1 extends Fragment {
+public class Fragment_Themes extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Fragment_Settings1 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Fragment_Settings1() {
+    public Fragment_Themes() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class Fragment_Settings1 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Fragment_Settings1.
+     * @return A new instance of fragment Fragment_Themes.
      */
     // TODO: Rename and change types and number of parameters
-    public static Fragment_Settings1 newInstance(String param1, String param2) {
-        Fragment_Settings1 fragment = new Fragment_Settings1();
+    public static Fragment_Themes newInstance(String param1, String param2) {
+        Fragment_Themes fragment = new Fragment_Themes();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class Fragment_Settings1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment__settings1, container, false);
+        return inflater.inflate(R.layout.fragment__themes, container, false);
     }
 }
