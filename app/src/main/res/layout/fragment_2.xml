@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue2"
-    tools:context=".Fragments.Fragment2">
+    tools:context=".MainScreen_Fragments.Fragment2">
 
     <Button
         android:id="@+id/btdist"

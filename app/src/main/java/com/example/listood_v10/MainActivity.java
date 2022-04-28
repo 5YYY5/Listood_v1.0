@@ -8,12 +8,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-import com.example.listood_v10.Fragments.Fragment1;
-import com.example.listood_v10.Fragments.Fragment2;
-import com.example.listood_v10.Fragments.Fragment3;
-import com.example.listood_v10.Fragments.Fragment4;
+import com.example.listood_v10.MainScreen_Fragments.Fragment1;
+import com.example.listood_v10.MainScreen_Fragments.Fragment2;
+import com.example.listood_v10.MainScreen_Fragments.Fragment3;
+import com.example.listood_v10.MainScreen_Fragments.Fragment4;
 
 public class MainActivity extends AppCompatActivity {
 
