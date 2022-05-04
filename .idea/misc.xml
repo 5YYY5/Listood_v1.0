@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adapter1_shape.xml" value="0.2703125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adapter_shape.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adpter2_shape.xml" value="0.25625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/fragment1_buttons_shape.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/roundedbutton.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/adapter_dayoftheweek_layout.xml" value="0.4" />
