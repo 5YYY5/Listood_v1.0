@@ -15,9 +15,17 @@
     </style>
 
     <style name="Style_Fragment1_Buttons">
-        <item name="android:layout_height">20dp</item>
-        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
         <item name="android:background">@drawable/fragment1_buttons_shape</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="Text_Fragment2_dninedely">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15dp</item>
     </style>
 
 </resources>

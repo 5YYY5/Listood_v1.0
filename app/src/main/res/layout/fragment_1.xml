@@ -88,10 +88,12 @@
 
         <Button
             android:id="@+id/btmon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="пн" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
         <Space
             android:layout_width="wrap_content"
@@ -99,10 +101,12 @@
 
         <Button
             android:id="@+id/bttue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="вт" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
         <Space
             android:layout_width="wrap_content"
@@ -110,10 +114,12 @@
 
         <Button
             android:id="@+id/btwed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="ср" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
         <Space
             android:layout_width="wrap_content"
@@ -121,10 +127,12 @@
 
         <Button
             android:id="@+id/btthu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="чт" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
         <Space
             android:layout_width="wrap_content"
@@ -132,10 +140,12 @@
 
         <Button
             android:id="@+id/btfri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="пт" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
         <Space
             android:layout_width="wrap_content"
@@ -143,10 +153,12 @@
 
         <Button
             android:id="@+id/btsat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="сб" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
         <Space
             android:layout_width="wrap_content"
@@ -154,10 +166,12 @@
 
         <Button
             android:id="@+id/btsun"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blue3"
+            style="@style/Style_Fragment1_Buttons"
             android:text="вс" />
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/blue3"-->
+
 
     </LinearLayout>
 

@@ -8,11 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.listood_v10.R;
 
+import java.util.ArrayList;
+
 public class Fragment2 extends Fragment {
 
+    ImageView im1, im2, im3, im4;
+    Button button;
+    ArrayList<ImageView> arrayList;
+    int s = 0;
     Button btdist, btauto, btfriend, btstat;
 
     @Override
@@ -49,6 +56,26 @@ public class Fragment2 extends Fragment {
             }
         });
         //==========================================================================================
+        im1 = im1.findViewById(R.id.imageView1);
+        im2 = im2.findViewById(R.id.imageView2);
+        im3 = im3.findViewById(R.id.imageView3);
+        im4 = im4.findViewById(R.id.imageView4);
+
+        arrayList = new ArrayList<>();
+        arrayList.add(im1);
+        arrayList.add(im2);
+        arrayList.add(im3);
+        arrayList.add(im4);
+        button = button.findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImageView im = (ImageView) arrayList.get(s);
+                im.setVisibility(View.VISIBLE);
+                s++;
+            }
+        });
+
     }
 
     @Override
