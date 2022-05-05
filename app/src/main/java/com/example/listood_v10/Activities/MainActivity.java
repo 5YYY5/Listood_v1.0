@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.listood_v10.Adapters.Adapter_DayOfTheWeek;
 import com.example.listood_v10.Adapters.Adapter_Reminders;
@@ -25,7 +26,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     Fragment fragmentmn;
-    Button bt1screen, bt2screen, bt3screen, bt4screen;
+    ImageButton bt1screen, bt2screen, bt3screen, bt4screen;
     ArrayList<Day_Of_The_Week> days = new ArrayList<Day_Of_The_Week>();
     ArrayList<Reminders> reminders = new ArrayList<Reminders>();
 
@@ -34,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Объявляю кнопки навигационной панели======================================================
-        bt1screen = (Button) findViewById(R.id.bt1);
-        bt2screen = (Button) findViewById(R.id.bt2);
-        bt3screen = (Button) findViewById(R.id.bt3);
-        bt4screen = (Button) findViewById(R.id.bt4);
+        bt1screen = (ImageButton) findViewById(R.id.bt1);
+        bt2screen = (ImageButton) findViewById(R.id.bt2);
+        bt3screen = (ImageButton) findViewById(R.id.bt3);
+        bt4screen = (ImageButton) findViewById(R.id.bt4);
         //Устанавливаю кликеры для кнопок===========================================================
         bt1screen.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -27,28 +27,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
+        <ImageButton
             android:id="@+id/bt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/calendar"
             android:text="nm1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/editing"
             android:text="nm2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/chat"
             android:text="nm3" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/menu"
             android:text="nm4" />
 
     </LinearLayout>

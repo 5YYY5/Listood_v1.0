@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btmon"
             style="@style/Style_Fragment1_Buttons"
             android:text="пн" />
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bttue"
             style="@style/Style_Fragment1_Buttons"
             android:text="вт" />
@@ -112,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btwed"
             style="@style/Style_Fragment1_Buttons"
             android:text="ср" />
@@ -125,7 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btthu"
             style="@style/Style_Fragment1_Buttons"
             android:text="чт" />
@@ -138,7 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btfri"
             style="@style/Style_Fragment1_Buttons"
             android:text="пт" />
@@ -151,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btsat"
             style="@style/Style_Fragment1_Buttons"
             android:text="сб" />
@@ -164,7 +164,7 @@
             android:layout_width="wrap_content"
             android:layout_height="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btsun"
             style="@style/Style_Fragment1_Buttons"
             android:text="вс" />
