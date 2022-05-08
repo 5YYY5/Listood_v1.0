@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Activities.MainActivity">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fr_main_place"
         android:name="com.example.listood_v10.MainScreen_Fragments.Fragment1"
         android:layout_width="match_parent"
@@ -27,33 +27,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bt1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/calendar"
-            android:text="nm1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nm1"/>
+<!--            android:background="@drawable/calendar" />-->
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/editing"
-            android:text="nm2" />
+            android:text="nm2"/>
+<!--            android:background="@drawable/editing" />-->
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/chat"
-            android:text="nm3" />
+            android:text="nm3"/>
+<!--            android:background="@drawable/chat" />-->
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bt4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/menu"
-            android:text="nm4" />
+            android:text="nm4"/>
+<!--            android:background="@drawable/menu" />-->
 
     </LinearLayout>
 
