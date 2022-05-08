@@ -21,67 +21,82 @@ public class Fragment2 extends Fragment {
     ArrayList<ImageView> arrayList;
     int s = 0;
     Button btdist, btauto, btfriend, btstat;
+    View rootview;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Объявляю кнопки навигационной панели======================================================
-        btdist = btdist.findViewById(R.id.bt1);
-        btauto = btauto.findViewById(R.id.bt2);
-        btfriend = btfriend.findViewById(R.id.bt3);
-        btstat = btstat.findViewById(R.id.bt4);
-        //Устанавливаю кликеры для кнопок===========================================================
-        btdist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
-        btauto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        btfriend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        btstat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        //==========================================================================================
-        im1 = im1.findViewById(R.id.imageView1);
-        im2 = im2.findViewById(R.id.imageView2);
-        im3 = im3.findViewById(R.id.imageView3);
-        im4 = im4.findViewById(R.id.imageView4);
-
-        arrayList = new ArrayList<>();
-        arrayList.add(im1);
-        arrayList.add(im2);
-        arrayList.add(im3);
-        arrayList.add(im4);
-        button = button.findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ImageView im = (ImageView) arrayList.get(s);
-                im.setVisibility(View.VISIBLE);
-                s++;
-            }
-        });
-
+//        im1 = im1.findViewById(R.id.imageView1);
+//        im2 = im2.findViewById(R.id.imageView2);
+//        im3 = im3.findViewById(R.id.imageView3);
+//        im4 = im4.findViewById(R.id.imageView4);
+//
+//        arrayList = new ArrayList<>();
+//        arrayList.add(im1);
+//        arrayList.add(im2);
+//        arrayList.add(im3);
+//        arrayList.add(im4);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        rootview = inflater.inflate(R.layout.fragment_2, container, false);
+
+        im1 = rootview.findViewById(R.id.imageView1);
+        im2 = rootview.findViewById(R.id.imageView2);
+        im3 = rootview.findViewById(R.id.imageView3);
+        im4 = rootview.findViewById(R.id.imageView4);
+
+        arrayList = new ArrayList<>();
+        arrayList.add(im1);
+        arrayList.add(im2);
+        arrayList.add(im3);
+        arrayList.add(im4);
+
+        //Объявляю кнопки навигационной панели======================================================
+        btdist = rootview.findViewById(R.id.bt1);
+        btauto = rootview.findViewById(R.id.bt2);
+        btfriend = rootview.findViewById(R.id.bt3);
+        btstat = rootview.findViewById(R.id.bt4);
+        button = rootview.findViewById(R.id.button);
+        //Устанавливаю кликеры для кнопок===========================================================
+//        btdist.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+//        btauto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+//        btfriend.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+//        btstat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ImageView im = (ImageView) arrayList.get(s);
+//                im.setVisibility(View.VISIBLE);
+//                s++;
+//            }
+//        });
+        //==========================================================================================
+
         return inflater.inflate(R.layout.fragment_2, container, false);
     }
 
