@@ -96,15 +96,14 @@ public class Fragment1 extends Fragment{
         RecyclerView recyclerView = rootview.findViewById(R.id.list);
         RecyclerView recyclerView1 = rootview.findViewById(R.id.list1);
         setInitialData();
-//        RecyclerView recyclerView = findViewById(R.id.list);
-//        RecyclerView recyclerView1 = findViewById(R.id.list1);
+        setInitialData1();
         Context context = getContext();
         // создаем адаптер
         Adapter_DayOfTheWeek adapter = new Adapter_DayOfTheWeek(context, days);
         Adapter_Reminders adapter1 = new Adapter_Reminders(context, reminders);
         // устанавливаем для списка адаптер
-//        recyclerView.setAdapter(adapter);
-//        recyclerView1.setAdapter(adapter1);
+        recyclerView.setAdapter(adapter);
+        recyclerView1.setAdapter(adapter1);
 
         return rootview;
     }
@@ -123,6 +122,15 @@ public class Fragment1 extends Fragment{
         days.add(new Day_Of_The_Week("16:00","Task10"));
         days.add(new Day_Of_The_Week("17:00","Task11"));
         days.add(new Day_Of_The_Week("18:00","Task12"));
+    }
+
+    private void setInitialData1() {
+        reminders.add(new Reminders("asd1"));
+        reminders.add(new Reminders("asd2"));
+        reminders.add(new Reminders("asd3"));
+        reminders.add(new Reminders("asd4"));
+
+
     }
 
 }

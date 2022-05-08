@@ -52,7 +52,7 @@
         android:layout_width="353dp"
         android:layout_height="347dp"
         android:background="@drawable/diagram"
-        app:layout_constraintBottom_toTopOf="@+id/btdist"
+        app:layout_constraintBottom_toTopOf="@+id/btauto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -145,51 +145,42 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btdist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="484dp"
+        style="@style/Style_Fragment2_Buttons"
+        android:layout_marginStart="35dp"
         android:text="распр"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/btauto" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btauto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="484dp"
-        android:layout_marginEnd="43dp"
+        style="@style/Style_Fragment2_Buttons"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="35dp"
         android:text="авто"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btfriend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="110dp"
+        style="@style/Style_Fragment2_Buttons"
+        android:layout_marginTop="35dp"
         android:text="друг"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/btdist"
+        app:layout_constraintTop_toBottomOf="@+id/btdist" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btstat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="110dp"
+        style="@style/Style_Fragment2_Buttons"
         android:text="стат"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btauto"
+        app:layout_constraintTop_toTopOf="@+id/btfriend" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
+        style="@style/Style_Fragment2_Buttons"
+        android:layout_marginBottom="70dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

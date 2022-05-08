@@ -14,38 +14,40 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/linearLayout_4_1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/avat"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/lisa"
-            app:civ_border_width="2dp"
             app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.35" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/avat"-->
-<!--            android:layout_width="150dp"-->
-<!--            android:layout_height="150dp"-->
-<!--            android:src="@drawable/lisa"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.35" />-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/avat"-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="150dp"-->
+        <!--            android:src="@drawable/lisa"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.35" />-->
 
-        <Space
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/name"
+            android:background="@color/blue2"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/avat" />
@@ -58,10 +60,10 @@
             android:text="Имя"
             android:textColor="@color/white"
             android:textSize="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/avat" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -76,52 +78,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ConstraintLayout_4_1">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btthem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/blue2_80"
+            style="@style/Style_Fragment4_Buttons"
             android:text="Темы" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btacc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/blue2_80"
+            style="@style/Style_Fragment4_Buttons"
             android:text="Аккаунт" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btinstr"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/blue2_80"
+            style="@style/Style_Fragment4_Buttons"
             android:text="Инструкция" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btsett1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/blue2_80"
+            style="@style/Style_Fragment4_Buttons"
             android:text="Настройки1" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btsett2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/blue2_80"
+            style="@style/Style_Fragment4_Buttons"
             android:text="Настройки2" />
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/containerset"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+<!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:id="@+id/containerset"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
 
-    </FrameLayout>
+<!--    </FrameLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
