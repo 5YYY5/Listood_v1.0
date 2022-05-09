@@ -9,28 +9,28 @@
 
     <LinearLayout
         android:id="@+id/ad1"
-        android:background="@drawable/adapter1_shape"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="-20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/adapter1_shape"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/list"
         app:layout_constraintEnd_toStartOf="@+id/linearLayoutButtons_Screen1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="horizontal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/ad2"
-        android:background="@drawable/adapter2_shape"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/adapter2_shape"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayoutButtons_Screen1"
@@ -42,8 +42,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="-10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout_middle"
         app:layout_constraintEnd_toStartOf="@+id/linearLayoutButtons_Screen1"
@@ -67,9 +68,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayoutButtons_Screen1"
@@ -90,10 +91,6 @@
             android:id="@+id/btmon"
             style="@style/Style_Fragment1_Buttons"
             android:text="пн" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
         <Space
             android:layout_width="wrap_content"
@@ -103,10 +100,6 @@
             android:id="@+id/bttue"
             style="@style/Style_Fragment1_Buttons"
             android:text="вт" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
         <Space
             android:layout_width="wrap_content"
@@ -116,10 +109,6 @@
             android:id="@+id/btwed"
             style="@style/Style_Fragment1_Buttons"
             android:text="ср" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
         <Space
             android:layout_width="wrap_content"
@@ -129,10 +118,6 @@
             android:id="@+id/btthu"
             style="@style/Style_Fragment1_Buttons"
             android:text="чт" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
         <Space
             android:layout_width="wrap_content"
@@ -142,10 +127,6 @@
             android:id="@+id/btfri"
             style="@style/Style_Fragment1_Buttons"
             android:text="пт" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
         <Space
             android:layout_width="wrap_content"
@@ -155,10 +136,6 @@
             android:id="@+id/btsat"
             style="@style/Style_Fragment1_Buttons"
             android:text="сб" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
         <Space
             android:layout_width="wrap_content"
@@ -168,12 +145,26 @@
             android:id="@+id/btsun"
             style="@style/Style_Fragment1_Buttons"
             android:text="вс" />
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@color/blue3"-->
-
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_den_nedely"
+        style="@style/Text_Fragment1"
+        android:layout_marginBottom="10dp"
+        android:text="День недели"
+        app:layout_constraintBottom_toTopOf="@+id/list"
+        app:layout_constraintEnd_toEndOf="@+id/list"
+        app:layout_constraintStart_toStartOf="@+id/list" />
+
+    <TextView
+        android:id="@+id/textView_napominaniya"
+        style="@style/Text_Fragment1"
+        android:layout_marginBottom="10dp"
+        android:text="Напоминания"
+        app:layout_constraintBottom_toTopOf="@+id/list1"
+        app:layout_constraintEnd_toEndOf="@+id/list1"
+        app:layout_constraintStart_toStartOf="@+id/list1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

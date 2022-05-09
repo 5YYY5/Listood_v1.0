@@ -19,33 +19,14 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:layout_gravity="bottom"
         android:background="@color/blue3"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
-        <!--            android:background="@drawable/calendar" />-->
-
-        <!--            android:background="@drawable/editing" />-->
-
-        <!--            android:background="@drawable/chat" />-->
-
-        <!--            android:background="@drawable/menu" />-->
-
     </LinearLayout>
-
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/bt1"-->
-<!--        style="@style/Style_Activity_Buttons"-->
-<!--        android:layout_marginTop="1dp"-->
-<!--        android:text=""-->
-<!--        android:background="@drawable/calendar"-->
-<!--        app:layout_constraintEnd_toStartOf="@id/bt2"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/fr_main_place"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/linearLayout3" />-->
 
     <ImageButton
         android:id="@+id/bt1"
@@ -58,17 +39,6 @@
         app:srcCompat="@drawable/calendar"
         tools:ignore="SpeakableTextPresentCheck" />
 
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/bt2"-->
-<!--        android:background="@drawable/editing"-->
-<!--        app:layout_constraintStart_toEndOf="@id/bt1"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/bt1"-->
-<!--        app:layout_constraintEnd_toStartOf="@id/bt3"-->
-<!--        style="@style/Style_Activity_Buttons"-->
-<!--        android:text=""-->
-<!--        tools:layout_editor_absoluteX="88dp"-->
-<!--        tools:layout_editor_absoluteY="683dp" />-->
-
     <ImageButton
         android:id="@+id/bt2"
         style="@style/Style_Activity_Buttons"
@@ -79,17 +49,6 @@
         app:srcCompat="@drawable/editing"
         tools:ignore="SpeakableTextPresentCheck" />
 
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/bt3"-->
-<!--        android:background="@drawable/chat"-->
-<!--        app:layout_constraintStart_toEndOf="@id/bt2"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/bt1"-->
-<!--        app:layout_constraintEnd_toStartOf="@id/bt4"-->
-<!--        style="@style/Style_Activity_Buttons"-->
-<!--        android:text=""-->
-<!--        tools:layout_editor_absoluteX="176dp"-->
-<!--        tools:layout_editor_absoluteY="683dp" />-->
-
     <ImageButton
         android:id="@+id/bt3"
         style="@style/Style_Activity_Buttons"
@@ -99,16 +58,6 @@
         app:layout_constraintTop_toTopOf="@+id/bt1"
         app:srcCompat="@drawable/chat"
         tools:ignore="SpeakableTextPresentCheck" />
-
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/bt4"-->
-<!--        android:background="@drawable/menu"-->
-<!--        style="@style/Style_Activity_Buttons"-->
-<!--        android:text=""-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/fr_main_place"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/bt1"-->
-<!--        app:layout_constraintStart_toEndOf="@id/bt3"-->
-<!--        tools:layout_editor_absoluteY="683dp" />-->
 
     <ImageButton
         android:id="@+id/bt4"

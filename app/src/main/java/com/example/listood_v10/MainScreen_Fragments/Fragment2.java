@@ -27,16 +27,6 @@ public class Fragment2 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        im1 = im1.findViewById(R.id.imageView1);
-//        im2 = im2.findViewById(R.id.imageView2);
-//        im3 = im3.findViewById(R.id.imageView3);
-//        im4 = im4.findViewById(R.id.imageView4);
-//
-//        arrayList = new ArrayList<>();
-//        arrayList.add(im1);
-//        arrayList.add(im2);
-//        arrayList.add(im3);
-//        arrayList.add(im4);
     }
 
     @Override
