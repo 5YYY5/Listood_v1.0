@@ -5,42 +5,29 @@ import java.util.*;
 public class Week {
 
     //Поля класса: массивы для обычных, постоянных задач; массив для самой недели
-    ArrayList<Task> tasks;
-    ArrayList<ConstTask> constTasks;
-    UnitOfTime[] times = new UnitOfTime[20160];
+    ArrayList<Task> tasks = new ArrayList<Task>();
+    public static Integer[] times = new Integer[20160];
 
     //попытка - не пытка)
     //Методы и конструктор класса
-    //в конструктуре устанавливаем постояннные задачи?самые первые, если они есть
-    public Week(ArrayList<ConstTask> constTasks) {
-        this.constTasks = constTasks;
-    }
 
-    //иначе пустой конструктор
+    //пустой конструктор
     public Week() {
+
     }
 
     //метод добавления задач
     //узнаём размер и с помощью for добавляем новые задачи к нашим основным массивам
-    public boolean addTasks(ArrayList<ConstTask> constTasks, ArrayList<Task> tasks) {
-        int sct = constTasks.size();
-        int st = tasks.size();
-        for (int i = 0; i < sct; i++) {
-            this.constTasks.add(constTasks.get(i));
-        }
-        for (int i = 0; i < sct; i++) {
-            this.tasks.add(tasks.get(i));
+    public boolean addTasks(ArrayList<Task> tasks) {
+        for (Task i: tasks) {
+            this.tasks.add(i);
         }
         return true;
     }
 
     //метод удаления задач
     //С помощью внутреннего метода чистим ячейки времени, потом обозначаем пустой удалённую задачу
-    public boolean delTasks(Integer[] indexconst, Integer[] indextask) {
-        for (int i : indexconst) {
-            constTasks.get(i).delete();
-            constTasks.set(i, null);
-        }
+    public boolean delTasks(Integer[] indextask) {
         for (int i : indextask) {
             tasks.get(i).delete();
             tasks.set(i, null);
@@ -49,21 +36,22 @@ public class Week {
     }
 
     //метод изменения задач
-    public boolean chanTasks(ArrayList<ConstTask> constTasks, ArrayList<Task> tasks) {
-        int sct = constTasks.size();
+    public boolean chanTasks(ArrayList<Task> tasks) {
         int st = tasks.size();
-        int j;
-        for (int i = 0; i < sct; i++) {
-            j = constTasks.get(i).index;
-            this.constTasks.get(j).delete();
-            this.constTasks.set(j, constTasks.get(i));
-        }
         for (int i = 0; i < st; i++) {
-            j = constTasks.get(i).index;
+            int j = tasks.get(i).index;
             this.tasks.get(j).delete();
             this.tasks.set(j, tasks.get(i));
         }
         return true;
+    }
+
+    //Для вывода и проверки
+    public void out(){
+        for (int i=0; i<1000; i++){
+            System.out.println(times[i]);
+        }
+        System.out.println(Arrays.stream(times).toArray().toString());
     }
 
     //метод автоматической расстановки
