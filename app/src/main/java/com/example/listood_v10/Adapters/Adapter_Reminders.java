@@ -44,7 +44,7 @@ public class Adapter_Reminders extends RecyclerView.Adapter<Adapter_Reminders.Vi
     public void onBindViewHolder(Adapter_Reminders.ViewHolder holder, int position) {
         Reminders reminder = reminders.get(position);
         holder.reminderView.setText(reminder.getReminder());
-        holder.itemView.setBackgroundColor(R.color.blue4);
+//        holder.itemView.setBackgroundColor(R.color.blue4);
     }
 
     //возвращает количество объектов в списке
@@ -65,7 +65,8 @@ public class Adapter_Reminders extends RecyclerView.Adapter<Adapter_Reminders.Vi
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-                    view.setBackgroundColor(R.color.blue4_80);
+
+//                    view.setBackgroundColor(R.color.blue4_80);
                 }
             });
         }

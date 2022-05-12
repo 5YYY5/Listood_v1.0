@@ -87,7 +87,7 @@ public class Fragment2 extends Fragment {
         });
         //==========================================================================================
 
-        return inflater.inflate(R.layout.fragment_2, container, false);
+        return rootview;
     }
 
 }

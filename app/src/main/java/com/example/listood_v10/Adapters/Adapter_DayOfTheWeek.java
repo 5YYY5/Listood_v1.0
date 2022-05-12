@@ -44,7 +44,7 @@ public class Adapter_DayOfTheWeek extends RecyclerView.Adapter<Adapter_DayOfTheW
         Day_Of_The_Week day = days.get(position);
         holder.timeView.setText(day.getTime());
         holder.taskView.setText(day.getTask());
-        holder.itemView.setBackgroundColor(R.color.blue4);
+//        holder.itemView.setBackgroundColor(R.color.blue4);
     }
 
     //возвращает количество объектов в списке
@@ -67,7 +67,8 @@ public class Adapter_DayOfTheWeek extends RecyclerView.Adapter<Adapter_DayOfTheW
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-                    view.setBackgroundColor(R.color.blue4_80);
+
+//                    view.setBackgroundColor(R.color.blue4_80);
                 }
             });
         }
