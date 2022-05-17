@@ -13,11 +13,8 @@ public class Week {
 
     //метод добавления задач
     //С помощью for добавляем новые задачи в наш основной массив
-    public boolean addTasks(ArrayList<Task> tasks) {
-        for (Task i: tasks) {
-            this.tasks.add(i);
-        }
-        return true;
+    public void addTasks(Task task) {
+            tasks.add(task);
     }
 
     //метод удаления задач
@@ -32,20 +29,14 @@ public class Week {
 
     //метод изменения задач
     //Отправляем исправленные задачи с нужным id
-    public boolean chanTasks(ArrayList<Task> tasks) {
-        int st = tasks.size();
-        for (int i = 0; i < st; i++) {
-            int id = tasks.get(i).id;
-            this.tasks.get(id).delete();
-            this.tasks.set(id, tasks.get(i));
-        }
-        return true;
+    public void chanTasks(Task task) {
+            int id = task.id;
+            tasks.get(id).delete();
+            tasks.set(id, task);
     }
 
     //Для вывода и проверки
     public void out(){
-        Object[] a=tasks.toArray();
-        System.out.println(Arrays.toString(a));
         for (int i=0; i<50; i++){
             System.out.println(times[i]);
         }
@@ -54,9 +45,19 @@ public class Week {
     //метод автоматической расстановки
     public boolean autoTasks(Task task) {
         ArrayList<Task> helptasks=(ArrayList<Task>)tasks.clone();
+        helptasks.add(task);
         helptasks.sort(new AutoComp());
-        Object[] a=helptasks.toArray();
+        String[] a = new String[helptasks.size()];
+        for (int i=0; i<helptasks.size(); i++)
+            a[i]=helptasks.get(i).name;
         System.out.println(Arrays.toString(a));
+        String[] ts = new String[20];
+        Integer nb=helptasks.get(0).indbegin;
+        for (int i=0; i<helptasks.get(0).duration; i++)
+            ts[nb+i]=helptasks.get(0).name;
+        for (int j=1; j<helptasks.size(); j++){
+
+        }
         return true;
     }
 }

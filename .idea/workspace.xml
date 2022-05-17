@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5f7715-496a-45d7-b3cd-2d98eb62dbd2" name="Changes" comment="1st">
-      <change afterPath="$PROJECT_DIR$/src/com/company/AutoComp.java" afterDir="false" />
+    <list default="true" id="fb5f7715-496a-45d7-b3cd-2d98eb62dbd2" name="Changes" comment="Wow, progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MainFicha_Samsung___/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MainFicha_Samsung___/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MainFicha_Samsung___/com/company/Week.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MainFicha_Samsung___/com/company/Week.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MainFicha_Samsung___/com/company/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MainFicha_Samsung___/com/company/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AutoComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AutoComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Week.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Week.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652350134841</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Wow, progress">
+      <created>1652603777857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652603777857</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -165,7 +170,8 @@
     </ignored-roots>
     <MESSAGE value="Changes added" />
     <MESSAGE value="1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st" />
+    <MESSAGE value="Wow, progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wow, progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
