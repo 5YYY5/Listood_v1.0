@@ -6,7 +6,7 @@ class AutoComp implements Comparator<Task> {
 
     @Override
     public int compare(Task obj1, Task obj2) {
-        //
+        //Используем полученную зависимость для компаратора
         int m1 = obj1.indend-obj1.duration;
         int m2 = obj2.indend-obj2.duration;
         //

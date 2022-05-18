@@ -6,7 +6,7 @@ public class Task extends Week{
 
     //Поля класса: имя, длительность (количество 15 минуток), время действия (индекс 15 минутки в массиве недели), индикатор существования
     String name;
-    Integer duration, index,indbegin, indend, id;
+    Integer duration, index, indbegin, indend, id;
 
     //Конструктор
     Task (String name, Integer id, Integer index, Integer duration, Integer indbegin, Integer indend) {
@@ -19,12 +19,12 @@ public class Task extends Week{
         this.indend=indend;
         //Заполнение ячеек времени
         for (Integer i=0; i<duration; i++) {
-            times[index+i]=index;
+            times[index+i]=id;
         }
     }
 
     //Удаление
-    public boolean delete() {
+    public void delete() {
         //Освобождение ячеек времени
         for (Integer i=0; i<duration; i++) {
             times[index+i]=null;
@@ -36,6 +36,5 @@ public class Task extends Week{
         duration=null;
         indend=null;
         indbegin=null;
-        return true;
     }
 }

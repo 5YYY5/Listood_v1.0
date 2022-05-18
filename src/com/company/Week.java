@@ -6,7 +6,7 @@ public class Week {
 
     //Поля класса: массивы для обычных, постоянных задач; массив для самой недели
     ArrayList<Task> tasks = new ArrayList<Task>();
-    public static Integer[] times = new Integer[20160];
+    public static Integer[] times = new Integer[2016];
 
     //пустой конструктор
     public Week() {}
@@ -19,12 +19,17 @@ public class Week {
 
     //метод удаления задач
     //С помощью внутреннего метода чистим ячейки времени, потом обозначаем пустой удалённую задачу
-    public boolean delTasks(Integer[] indextask) {
-        for (Integer i : indextask) {
-            tasks.get(i).delete();
-            tasks.set(i, null);
-        }
-        return true;
+    public void delTasks(int indextask) {
+            tasks.get(indextask).delete();
+            tasks.remove(indextask);
+            int tsz=tasks.size();
+            for (int i=indextask; i<tsz;i++){
+                tasks.get(i).id=i;
+                Task curtk=tasks.get(i);
+                for (int j=curtk.index; j<curtk.duration; j++){
+                    times[j]=i;
+                }
+            }
     }
 
     //метод изменения задач
@@ -38,26 +43,69 @@ public class Week {
     //Для вывода и проверки
     public void out(){
         for (int i=0; i<50; i++){
-            System.out.println(times[i]);
+            System.out.print(times[i]+" ");
         }
+        System.out.println("\n\n\n");
     }
 
     //метод автоматической расстановки
-    public boolean autoTasks(Task task) {
+    public void autoTasks(Task task) {
+        //Клонируем задачи в вспомагательный массив и сортируем с помощью компаратора
         ArrayList<Task> helptasks=(ArrayList<Task>)tasks.clone();
         helptasks.add(task);
-        helptasks.sort(new AutoComp());
+
         String[] a = new String[helptasks.size()];
         for (int i=0; i<helptasks.size(); i++)
             a[i]=helptasks.get(i).name;
         System.out.println(Arrays.toString(a));
-        String[] ts = new String[20];
-        Integer nb=helptasks.get(0).indbegin;
-        for (int i=0; i<helptasks.get(0).duration; i++)
-            ts[nb+i]=helptasks.get(0).name;
-        for (int j=1; j<helptasks.size(); j++){
 
+        helptasks.sort(new AutoComp());
+
+        a = new String[helptasks.size()];
+        for (int i=0; i<helptasks.size(); i++)
+            a[i]=helptasks.get(i).name;
+        System.out.println(Arrays.toString(a));
+
+        //Проверка возможности такой растановки
+        boolean flag=true; //Флаг показатель возможности
+        int htsize=helptasks.size();
+        int freecells;
+        Task curtask;
+        int befend=-1;
+
+        for (int i=0; i<htsize; i++){
+            curtask=helptasks.get(i);
+            freecells=curtask.indend-curtask.duration;
+            if (befend<=freecells){
+                befend=Math.max(befend,curtask.indbegin)+curtask.duration;
+            }else{
+                flag=false;
+                break;
+            }
         }
-        return true;
+
+        if (flag){//если расстановка возможна начинаем её создавать
+            times=new Integer[2016];
+            befend=-1;
+            int begn;
+
+            System.out.println(htsize);
+            for (int i=0; i<htsize; i++) {
+                curtask = helptasks.get(i);
+                begn = Math.max(befend, curtask.indbegin);
+                helptasks.get(i).id=i;
+                helptasks.get(i).index=begn;
+                System.out.println(begn+" "+curtask.duration);
+                for (int j=begn; j<begn+curtask.duration; j++){
+                    times[j]=i;
+                    System.out.println(times[j]);
+                }
+                befend=begn+curtask.duration;
+            }
+            tasks= (ArrayList<Task>) helptasks.clone();
+            System.out.println("Сделано");
+        }else{
+            System.out.println("Нельзя");
+        }
     }
 }
