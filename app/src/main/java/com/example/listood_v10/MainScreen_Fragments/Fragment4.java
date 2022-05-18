@@ -52,39 +52,40 @@ public class Fragment4 extends Fragment {
     }
 
     public void onClick(View v) {
+        Dialog dialog;
         switch (v.getId()) {
             case R.id.btthem:
-                showDialog(IDD_THEM);
                 Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                dialog= onCreateDialog(IDD_THEM);
                 break;
             case R.id.btacc:
-                showDialog(IDD_ACC);
                 Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                dialog= onCreateDialog(IDD_ACC);
                 break;
             case R.id.btinstr:
-                showDialog(IDD_INSTR);
                 Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                dialog=onCreateDialog(IDD_INSTR);
                 break;
             case R.id.btsett1:
-                showDialog(IDD_SETT1);
                 Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                dialog= onCreateDialog(IDD_SETT1);
                 break;
             case R.id.btsett2:
-                showDialog(IDD_SETT2);
                 Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                dialog= onCreateDialog(IDD_SETT2);
+                break;
+            default:
+                dialog=null;
                 break;
         }
-    }
-
-    private void showDialog(int idd_them) {
-
+        dialog.show();
     }
 
 
     protected Dialog onCreateDialog(int id) {
-        Toast.makeText(getContext(), "Тоже Работает", Toast.LENGTH_SHORT).show();
         switch (id) {
             case IDD_THEM:
+                Toast.makeText(getContext(), "Тоже Работает", Toast.LENGTH_SHORT).show();
                 final String[] mChooseThems = { "Cиний", "Красный", "Тёмный" };
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                 builder.setTitle("Выберите тему")
@@ -103,6 +104,7 @@ public class Fragment4 extends Fragment {
                                         Toast.makeText(getContext(), "Выбрана тема: " + mChooseThems[item], Toast.LENGTH_SHORT).show();
                                     }
                                 });
+                Toast.makeText(getContext(), "Хопа", Toast.LENGTH_SHORT).show();
                 return builder.create();
             case IDD_ACC:
 
@@ -110,8 +112,7 @@ public class Fragment4 extends Fragment {
                 builder = new AlertDialog.Builder(getContext());
                 builder.setMessage("Инструкция")
                         .setCancelable(false)
-                        .setPositiveButton("Ок",
-                                new DialogInterface.OnClickListener() {
+                        .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
                                         dialog.cancel();
                                     }
@@ -122,8 +123,7 @@ public class Fragment4 extends Fragment {
                 builder = new AlertDialog.Builder(getContext());
                 builder.setCancelable(false)
                         // добавляем одну кнопку для закрытия диалога
-                        .setNeutralButton("Назад",
-                                new DialogInterface.OnClickListener() {
+                        .setNeutralButton("Назад", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
                                         dialog.cancel();
                                     }
