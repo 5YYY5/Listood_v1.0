@@ -55,23 +55,23 @@ public class Fragment4 extends Fragment {
         Dialog dialog;
         switch (v.getId()) {
             case R.id.btthem:
-                Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Темы", Toast.LENGTH_SHORT).show();
                 dialog= onCreateDialog(IDD_THEM);
                 break;
             case R.id.btacc:
-                Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Аккаунт", Toast.LENGTH_SHORT).show();
                 dialog= onCreateDialog(IDD_ACC);
                 break;
             case R.id.btinstr:
-                Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Инструкция", Toast.LENGTH_SHORT).show();
                 dialog=onCreateDialog(IDD_INSTR);
                 break;
             case R.id.btsett1:
-                Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Настройка 1", Toast.LENGTH_SHORT).show();
                 dialog= onCreateDialog(IDD_SETT1);
                 break;
             case R.id.btsett2:
-                Toast.makeText(getContext(), "Работает", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Настройка 2", Toast.LENGTH_SHORT).show();
                 dialog= onCreateDialog(IDD_SETT2);
                 break;
             default:
@@ -85,7 +85,6 @@ public class Fragment4 extends Fragment {
     protected Dialog onCreateDialog(int id) {
         switch (id) {
             case IDD_THEM:
-                Toast.makeText(getContext(), "Тоже Работает", Toast.LENGTH_SHORT).show();
                 final String[] mChooseThems = { "Cиний", "Красный", "Тёмный" };
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                 builder.setTitle("Выберите тему")
@@ -104,7 +103,6 @@ public class Fragment4 extends Fragment {
                                         Toast.makeText(getContext(), "Выбрана тема: " + mChooseThems[item], Toast.LENGTH_SHORT).show();
                                     }
                                 });
-                Toast.makeText(getContext(), "Хопа", Toast.LENGTH_SHORT).show();
                 return builder.create();
             case IDD_ACC:
 

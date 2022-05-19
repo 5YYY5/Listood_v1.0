@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.listood_v10.MainScreen_Fragments.Fragment1;
 import com.example.listood_v10.R;
 
 import java.util.List;
@@ -17,10 +18,12 @@ public class Adapter_DayOfTheWeek extends RecyclerView.Adapter<Adapter_DayOfTheW
 
     public final LayoutInflater inflater;
     public final List<Day_Of_The_Week> days;
+    private Fragment1.OnDayClickListener onDayClickListener;
 
-    public Adapter_DayOfTheWeek(Context context, List<Day_Of_The_Week> days) {
+    public Adapter_DayOfTheWeek(Context context, List<Day_Of_The_Week> days, Fragment1.OnDayClickListener onDayClickListener) {
         this.days = days;
         this.inflater = LayoutInflater.from(context);
+        this.onDayClickListener=onDayClickListener;
     }
 
 
@@ -67,8 +70,8 @@ public class Adapter_DayOfTheWeek extends RecyclerView.Adapter<Adapter_DayOfTheW
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-
-//                    view.setBackgroundColor(R.color.blue4_80);
+                    Day_Of_The_Week day = days.get(getLayoutPosition());
+                    onDayClickListener.OnReminderClick(day);
                 }
             });
         }

@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.listood_v10.Adapters.Adapter_DayOfTheWeek;
 import com.example.listood_v10.Adapters.Adapter_Reminders;
@@ -39,8 +40,24 @@ public class Fragment1 extends Fragment{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         rootview = inflater.inflate(R.layout.fragment_1, container, false);
+        Context context = getContext();
+        //==========================================================================================
 
-        //Объявляю кнопки навигационной панели======================================================
+        //Адаптер Days======================================================================
+        RecyclerView recyclerView = rootview.findViewById(R.id.list);
+        setInitialDataDays();
+        // создаем адаптер
+        OnDayClickListener onDayClickListener = new OnDayClickListener() {
+            @Override
+            public void OnReminderClick(Day_Of_The_Week day) {
+                Toast.makeText(getContext(), "Ok "+day.getTask(), Toast.LENGTH_SHORT).show();
+            }
+        };
+        Adapter_DayOfTheWeek adapterdays = new Adapter_DayOfTheWeek(context, days, onDayClickListener);
+        // устанавливаем для списка адаптер
+        recyclerView.setAdapter(adapterdays);
+
+        //Объявляю кнопки сбоку======================================================
         btmon = rootview.findViewById(R.id.btmon);
         bttue = rootview.findViewById(R.id.bttue);
         btwed = rootview.findViewById(R.id.btwed);
@@ -92,23 +109,33 @@ public class Fragment1 extends Fragment{
             }
         });
         //==========================================================================================
-        //Работаю с адаптерами======================================================================
-        RecyclerView recyclerView = rootview.findViewById(R.id.list);
+        //Адаптер напоминания=======================================================================
         RecyclerView recyclerView1 = rootview.findViewById(R.id.list1);
-        setInitialData();
-        setInitialData1();
-        Context context = getContext();
-        // создаем адаптер
-        Adapter_DayOfTheWeek adapter = new Adapter_DayOfTheWeek(context, days);
-        Adapter_Reminders adapter1 = new Adapter_Reminders(context, reminders);
-        // устанавливаем для списка адаптер
-        recyclerView.setAdapter(adapter);
-        recyclerView1.setAdapter(adapter1);
+        OnReminderClickListener onReminderClickListener = new OnReminderClickListener() {
+            @Override
+            public void OnReminderClick(Reminders rem) {
+                Toast.makeText(getContext(), "Ok? No "+rem.getReminder(), Toast.LENGTH_SHORT).show();
+            }
+        };
+        reminders.add(new Reminders("gbfvd"));
+        reminders.add(new Reminders("gbfvdfgnbfdbnf"));
+
+        Adapter_Reminders adapterem = new Adapter_Reminders(context, reminders, onReminderClickListener);
+
+        recyclerView1.setAdapter(adapterem);
 
         return rootview;
     }
 
-    private void setInitialData() {
+    public interface OnReminderClickListener {
+        void OnReminderClick(Reminders reminders);
+    }
+
+    public interface OnDayClickListener {
+        void OnReminderClick(Day_Of_The_Week days);
+    }
+
+    private void setInitialDataDays() {
 
         days.add(new Day_Of_The_Week("7:00","Task1"));
         days.add(new Day_Of_The_Week("8:00","Task2"));
@@ -122,15 +149,6 @@ public class Fragment1 extends Fragment{
         days.add(new Day_Of_The_Week("16:00","Task10"));
         days.add(new Day_Of_The_Week("17:00","Task11"));
         days.add(new Day_Of_The_Week("18:00","Task12"));
-    }
-
-    private void setInitialData1() {
-        reminders.add(new Reminders("asd1"));
-        reminders.add(new Reminders("asd2"));
-        reminders.add(new Reminders("asd3"));
-        reminders.add(new Reminders("asd4"));
-
-
     }
 
 }
