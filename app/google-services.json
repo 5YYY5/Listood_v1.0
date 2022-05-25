@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350057117974",
+    "project_id": "listood-v1-0-probably",
+    "storage_bucket": "listood-v1-0-probably.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350057117974:android:b9e0266f5f0dd150193837",
+        "android_client_info": {
+          "package_name": "com.example.listood_v10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350057117974-jeti74mha2imafj8q14glq7tih9rkafl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdX5qXT9RudhOK_G4vyZWUSgkrVjhykLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350057117974-jeti74mha2imafj8q14glq7tih9rkafl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

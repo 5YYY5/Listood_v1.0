@@ -3,15 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable-v24/back_btn.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable-v24/my_msg_back.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable-v24/opo_msg_back.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable-v24/round_back_light_10.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable-v24/round_back_theme_1000.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable-v24/round_back_white_10.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adapter1_shape.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adapter2_shape.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adapter_shape.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/adpter2_shape.xml" value="0.25625" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/fragment1_buttons_shape.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/drawable/roundedbutton.xml" value="0.2703125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/activity_chat.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/activity_main_1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/activity_main_2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/activity_register.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/adapter_dayoftheweek_layout.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/adapter_reminders_layout.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/chat_adapter_layout.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/fg.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/fr_1.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/fr_2.xml" value="0.1838768115942029" />
@@ -25,6 +36,10 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/fragment__account.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/fragment__instruction.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/login_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/messages_adapter_layout.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/read_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/layout/show_layout.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Listood_v10/app/src/main/res/xml/roundedbutton.xml" value="0.25416666666666665" />
       </map>
     </option>
