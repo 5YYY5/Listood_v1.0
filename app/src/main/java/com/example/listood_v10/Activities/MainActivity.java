@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     private void setNewFragment(Fragment fragment){
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fr_main_place, fragment);
