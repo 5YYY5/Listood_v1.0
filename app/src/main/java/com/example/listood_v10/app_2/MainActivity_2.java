@@ -30,7 +30,7 @@ public class MainActivity_2 extends AppCompatActivity {
     private final List<MessagesList> messagesLists = new ArrayList<>();
     private String mobile, email, name;
     private RecyclerView messagesRecyclerView;
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://chatapplication-fdcdb-default-rtdb.firebaseio.com/");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://listood-v1-0-probably-default-rtdb.firebaseio.com/");
 
     private String lastMessage="";
     private  int unseenMessages=0;
