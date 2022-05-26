@@ -31,6 +31,7 @@ public class Register extends AppCompatActivity {
         final EditText name = findViewById(R.id.r_name);
         final EditText mobile = findViewById(R.id.r_mobile);
         final EditText email = findViewById(R.id.r_email);
+        final EditText url_pic = findViewById(R.id.r_URL_pic);
         final AppCompatButton registerBtn = findViewById(R.id.r_registerBtn);
 
         ProgressDialog progressDialog = new ProgressDialog(this);
@@ -58,8 +59,9 @@ public class Register extends AppCompatActivity {
                 final String nameTxt = name.getText().toString();
                 final String mobileTxt = mobile.getText().toString();
                 final String emailTxt = email.getText().toString();
+                final String url_pic_Txt = url_pic.getText().toString();
 
-                if (nameTxt.isEmpty() || mobileTxt.isEmpty() || emailTxt.isEmpty()){
+                if (nameTxt.isEmpty() || mobileTxt.isEmpty() || emailTxt.isEmpty() || url_pic_Txt.isEmpty()){
 
                     Toast.makeText(Register.this, "All Fields Required!!!", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
@@ -79,8 +81,8 @@ public class Register extends AppCompatActivity {
                             } else {
 
                                 databaseReference.child("users").child(mobileTxt).child("email").setValue(emailTxt);
-                                databaseReference.child("users").child(mobileTxt).child("name").setValue(emailTxt);
-                                databaseReference.child("users").child(mobileTxt).child("profile_pic").setValue("");
+                                databaseReference.child("users").child(mobileTxt).child("name").setValue(nameTxt);
+                                databaseReference.child("users").child(mobileTxt).child("profile_pic").setValue(url_pic_Txt);
 
                                 //save mobile to memory
                                 MemoryData.saveData(mobileTxt, Register.this);

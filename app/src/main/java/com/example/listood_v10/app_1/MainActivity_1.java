@@ -30,7 +30,7 @@ public class MainActivity_1 extends AppCompatActivity {
         edName = findViewById(R.id.edName);
         edSecName = findViewById(R.id.edSecName);
         edEmail = findViewById(R.id.edEmail);
-        mDataBase = FirebaseDatabase.getInstance("https://newttt-c67cd-default-rtdb.firebaseio.com/").getReference(USER_KEY);
+        mDataBase = FirebaseDatabase.getInstance("https://listood-v1-0-probably-default-rtdb.firebaseio.com/").getReference(USER_KEY);
     }
 
     public void onClickSave(View view)

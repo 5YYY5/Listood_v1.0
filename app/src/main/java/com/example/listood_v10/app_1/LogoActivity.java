@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.listood_v10.Activities.MainActivity;
 import com.example.listood_v10.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -150,7 +151,7 @@ public class LogoActivity extends AppCompatActivity {
 
     public void onClickStart(View view) {
 
-        Intent intent = new Intent(LogoActivity.this, MainActivity_1.class);
+        Intent intent = new Intent(LogoActivity.this, MainActivity.class);
         startActivity(intent);
     }
 

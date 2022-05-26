@@ -1,11 +1,16 @@
 package com.example.listood_v10.Main_ficha;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.util.*;
 
 public class Main {
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Week week = new Week();

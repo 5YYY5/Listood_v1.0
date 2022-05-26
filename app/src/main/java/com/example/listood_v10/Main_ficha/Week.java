@@ -1,11 +1,15 @@
 package com.example.listood_v10.Main_ficha;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.util.*;
 
 public class Week {
 
     //Поля класса: массивы для обычных, постоянных задач; массив для самой недели
-    ArrayList<Task> tasks = new ArrayList<Task>();
+    public ArrayList<Task> tasks = new ArrayList<Task>();
     public static Integer[] times = new Integer[2016];
 
     //пустой конструктор
@@ -49,6 +53,7 @@ public class Week {
     }
 
     //метод автоматической расстановки
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void autoTasks(Task task) {
         //Клонируем задачи в вспомагательный массив и сортируем с помощью компаратора
         ArrayList<Task> helptasks=(ArrayList<Task>)tasks.clone();

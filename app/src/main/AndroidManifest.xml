@@ -9,48 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Listood_v10">
-        <activity
-            android:name=".Activities.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".app_2.chat.Chat"
-            android:exported="false" />
-        <activity
-            android:name=".app_2.Register"
-            android:exported="true">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
-
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
-        </activity>
+        <!--=====================================================================================-->
+        <activity android:name=".Activities.MainActivity"></activity>
+        <!--=====================================================================================-->
+        <activity android:name=".app_2.chat.Chat"></activity>
+        <activity android:name=".app_2.Register"></activity>
         <activity android:name=".app_2.MainActivity_2"></activity>
+        <!--=====================================================================================-->
+        <activity android:name=".app_1.ShowActivity"></activity>
+        <activity android:name=".app_1.ReadActivity"></activity>
+        <activity android:name=".app_1.MainActivity_1"></activity>
 
-
-
-        <activity
-            android:name=".app_1.ShowActivity"
-            android:exported="false" />
         <activity
             android:name=".app_1.LogoActivity"
             android:exported="true">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
         </activity>
-        <activity android:name=".app_1.ReadActivity" />
-        <activity android:name=".app_1.MainActivity_1" />
-
-
+        <!--=====================================================================================-->
 
     </application>
 

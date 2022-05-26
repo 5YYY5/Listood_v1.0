@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:onClick="onClickSignUp"
-        android:text="Зарегистрироватся"
+        android:text="Зарегистрироваться"
         app:layout_constraintEnd_toEndOf="@+id/edPassword"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/edPassword"
